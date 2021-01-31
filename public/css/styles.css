@@ -1,5 +1,5 @@
 html {
-  background-color: #e4e9fd;
+  background-color: #ffc3a0;
   background-image: linear-gradient(55deg, #ffc3a0, #ffafbd);
   min-height: 100%;
   font-family: "Ubuntu", sans-serif;
@@ -134,7 +134,11 @@ input[type="text"]:focus {
 
 /* Phone media queries */
 
-@media only screen and (max-width: 767.98px) {
+/* TO DO: mobile responsiveness - stacked divs */
+
+
+@media all and (max-device-width: 767px) {
+
   #heading {
     width: 90%;
   }
@@ -144,19 +148,23 @@ input[type="text"]:focus {
   }
 
   .flex {
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
     flex-direction: column-reverse;
-    align-items: center;
   }
 
   .instructions-box {
-    margin: 5% 0 0;
-    min-width: 80%;
+    flex-basis: 100%;
+    margin: 5%;
+    min-width: 85%;
     padding: 2%;
   }
 
   .big-box {
-    margin: 10% 0;
-    min-width: 80%;
+    margin: 5%;
+    min-width: 85%;
     padding: 2%;
   }
+
 }
